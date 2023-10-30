@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculatorWindow">
+        <div class="name"> <p>ITMD 541- Lab 3 - Bhanumahesh Pasham</p></div>
+
+            <div class="heading"> <p>Tip Calculator</p></div>
+<form id="billContainerFormId">
+            <div class="billDetailsContainer">
+
+                <div class="billTotal flex-item">
+                        <label  class="labelElement" for="billTotalId">BillTotal:</label>
+                        <input type="text" name ="billTotal" id="billTotalId" placeholder="Enter bill amount" oninput="validateInput(this)"><br> 
+                </div>
+
+                <div class="errorMessage flex-item">
+                    <p id="error-message" style="color: red;"> </p>
+                </div>
+
+                <div class="tip flex-item">
+                    <label  class="labelElement" for="tipId">Tip:</label>
+                    <input type="range" name ="tip" id="tipId" min="0" max="100" step="1" value="0.01" >
+                    
+                </div>
+
+                <div class="tipPercentage flex-item">
+                    <label class="labelElement" for="tipPercentageId">Tip Percentage:</label>
+                    <input type="input" name ="tipPercentage" id="tipPercentageId" disabled>
+    
+                </div>
+
+                <div class="tipAmountContainer flex-item">
+                    <label class="labelElement" for="tipAmountId">Tip Amount:</label>
+                    <input type="text" name ="tipAmount" id="tipAmountId" disabled>
+                   
+                </div>
+
+                <div class="totalBillContainer flex-item">
+                    <label class="labelElement"  for="totalBillId">Total Bill with Tip:</label>
+                    <input type="text" name ="totalBill" id="totalBillId" value="0" disabled>
+                    
+                </div>
+            </form>
+            
+        
+    </div>
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>
